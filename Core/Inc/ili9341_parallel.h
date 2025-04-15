@@ -152,7 +152,7 @@ SOFTWARE.
 	* DB17					PA7
 	*
 	*		--Control--
-	* RESETn				PB11
+	* RESETn				PB8
 	* CSn					PB12
 	* D/Cn					PB13
 	* WRn					PB14
