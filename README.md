@@ -10,7 +10,7 @@ Ver video
 
 ### Montaje
 
-En este proyecto utilizo un display típico de Arduino, un Shield ILI9341 de 2.8". Estos funcionan en 5V, tanto la alimentación (+VCC) como las señales, pero el display que trae el shield funciona en 3.3V por lo que consta de un regulador de voltaje (AMS1117) más dos chips (74HC245) que se encargan de convertir las señales de 5V a 3.3V y viceversa.
+En este proyecto utilizo un display típico de Arduino, un Shield ILI9341 de 2.8". Estos funcionan en 5V, tanto la alimentación (+VCC) como las señales digitales, pero el display que trae el shield funciona en 3.3V por lo que consta de un regulador de voltaje (AMS1117) más dos chips (74HC245) que se encargan de convertir las señales de 5V a 3.3V y viceversa.
 
 Para poder conectar este shield con el modulo BluPill hay que hacer que funcione a 3.3V, para ello quitamos los chips y el regulador, además de otras modificaiones.
 
