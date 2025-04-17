@@ -8,7 +8,7 @@ Ver video
 
 ------------
 
-### Montaje
+### Preparación...
 
 En este proyecto utilizo un display típico de Arduino, un Shield ILI9341 de 2.8". Estos funcionan en 5V, tanto la alimentación (+VCC) como las señales digitales, pero el display que trae el shield funciona en 3.3V por lo que consta de un regulador de voltaje (AMS1117) más dos chips (74HC245) que se encargan de convertir las señales de 5V a 3.3V y viceversa.
 
@@ -55,5 +55,8 @@ Para poder contar con PB2 hay que remover R4, hacer un puente en su lugar (puede
 
 ![](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/BluePill_front_%26_back_pcb.jpg)
 
-
 ------------
+
+### Montaje...
+
+
