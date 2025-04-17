@@ -1,5 +1,5 @@
-## STM32F103C8T6 - Voltimetro de 4 canales
-***(STM32F103C8T6 - 4 channel voltmeter)***
+## BluePill STM32F103C8T6 - Voltimetro de 4 canales
+***(BluePill STM32F103C8T6 - 4 channel voltmeter)***
 #### Voltimetro de 4 canales con registro y trazado de lecturas/muestras en tiempo real
 ***(4-channel voltmeter with real-time recording and plotting of readings/samples)***
 
@@ -27,21 +27,21 @@ Al shield le quite los pines que originalmente trajo soldados y solde nuevos en 
 
 La conexión del display con el modulo BluePill para este proyecto queda como se muestra en la siguiente tabla.
  
-| ILI9341 | STM32 |
-| ------------ | ------------ |
-|  DB10 | PA0  |
-|  DB11 | PA1  |
-|  DB12 | PA2  |
-|  DB13 | PA3  |
-|  DB14 | PA4  |
-|  DB15 | PA5  |
-|  DB16 | PA6  |
-|  DB17 | PA7  |
-|   |   |
-|  RSTn | PB8  |
-|  CSn | PB12  |
-|  D/Cn | PB13  |
-|  WRn | PB14  |
-|  RDn | PB15  |
+| ILI9341 | - | Shield | BluePill |
+| ------------ | ------------ | ------------ | ------------ |
+|  DB10 |   | D0   | PB0  |
+|  DB11 |   | D1   | PB1  |
+|  DB12 |   | D2   | PB2  |
+|  DB13 |   | D3   | PB3  |
+|  DB14 |   | D4   | PB4  |
+|  DB15 |   | D5   | PB5  |
+|  DB16 |   | D6   | PB6  |
+|  DB17 |   | D7   | PB7  |
+|   |   |   |   |
+|  RSTn |   | RST  | PB8  |
+|  CSn |   | CS   | PB12  |
+|  D/Cn |   | DC   | PB13  |
+|  WRn |   | WR   | PB14  |
+|  RDn |   | RD   | PB15  |
 
 ------------
