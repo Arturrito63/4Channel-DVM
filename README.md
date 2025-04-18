@@ -8,7 +8,7 @@ Ver video
 
 ------------
 
-### Montaje
+### Preparación...
 
 En este proyecto utilizo un display típico de Arduino, un Shield ILI9341 de 2.8". Estos funcionan en 5V, tanto la alimentación (+VCC) como las señales digitales, pero el display que trae el shield funciona en 3.3V por lo que consta de un regulador de voltaje (AMS1117) más dos chips (74HC245) que se encargan de convertir las señales de 5V a 3.3V y viceversa.
 
@@ -25,7 +25,7 @@ Al shield le quite los pines que originalmente trajo soldados y solde nuevos en 
 ![](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/ILI934%203V3%20pinout.jpg) 
 
 
-La conexión del display con el modulo BluePill para este proyecto queda como se muestra en la siguiente tabla.
+Para este proyecto utilizo un modulo BluePill con un MCU STM32F103C8T6. La conexión del display con el modulo BluePill queda entonces como se muestra en la siguiente tabla.
  
 | ILI9341 | - | Shield | BluePill |
 | ------------ | ------------ | ------------ | ------------ |
@@ -44,4 +44,19 @@ La conexión del display con el modulo BluePill para este proyecto queda como se
 |  WRn |   | WR   | PB14  |
 |  RDn |   | RD   | PB15  |
 
+#### Importante
+
+En el modulo BluePill no existe un pin conectado directamente a PB2 del chip STM32F103C8T6, PB2 esta conectado a travez de un resistencia (R4) de 100KΩ al pin BOOT1. Durante el arranque normal del modulo es necesario que este pin este conectado a GND (la posición por defecto del jumper en BOOT1). En el diagrama a continuación puede verse a R4 conctado de un extremo al pin 4 del header (BOOT1) y de su otro extremo al pin 20 del MCU.
+
+[![](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/BluePill%20diagram.png)](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/STM32F103-Blue-Pill.pdf)
+
+
+Para poder contar con PB2 hay que remover R4, hacer un puente en su lugar (puede usarse una resistencia de 0Ω) y luego soldar R4 entre los pines 4 y 6 del header BOOT0/BOOT1. Esto elimina la necesidad del jumper selector en BOOT1 por lo que ahora ya se podrá utilizar el pin 4 del header como PB2. Hay que asegurarse que durante el inicio del MCU no haya en este pin un valor lógico diferente de 0. 
+
+![](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/BluePill_front_%26_back_pcb.jpg)
+
 ------------
+
+### Montaje...
+
+
