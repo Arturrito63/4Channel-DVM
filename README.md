@@ -59,4 +59,10 @@ Para poder contar con PB2 hay que remover R4, hacer un puente en su lugar (puede
 
 ### Montaje...
 
+Para el montaje además del modulo BluePill ya modificado, al igual que el shield ILI9341 tambien modificado para tal fin, se suma un led a elección, una resistencia de 330Ω 1/4W, un switch tipo pulsador (push button), un resonador piezoelectrico (buzzer) y un encoder rotativo con pulsador.
 
+[![](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/4-Channel-DVM.png)](https://github.com/Arturrito63/4Channel-DVM/blob/main/Documents/4-Channel-DVM.pdf)
+
+------------
+
+### Programa...
